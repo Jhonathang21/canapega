@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  /* Encabezado */
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+  header {
+    padding: 20px 0;
+    height: 400px;
+    width: 100%;
+    background-image: url('imagen2.png'); /* Ruta de tu imagen con transparencia */
+    background-size: cover; /* Ajusta la imagen para cubrir el encabezado */
+    background-position: center; /* Centra la imagen */
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    
+  }
+  
+
+  
+  .logo img {
+    height: 50px;
+    
+  }
+
+  nav{
+    
+    background-color: azure;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+    
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-items: center;
+    border-radius: 5px solid #003366;
+  }
+  
+
+  /* Botón de WhatsApp */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-btn img {
+    width: 96px;
+    height: 96px;
+  }
+  
+
+  /* Secciones */
+  section {
+    padding: 50px 0;
+  }
+  
+  h2 {
+    color: #920a23;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Productos */
+  .productos-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .producto {
+    flex: 0 0 auto;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Testimonios */
+  .testimonios-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .video {
+    flex: 0 0 auto;
+    width: 300px;
+  }
+  
+  .video iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f1ab70;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Botón "Volver arriba" */
+  .scroll-top-nav {
+    position: fixed;
+    
+    background-color: azure;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .scroll-top-btn.show {
+    display: block;
+  }
