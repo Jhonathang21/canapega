@@ -1,201 +1,313 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+
+/* Contenedor */
+.container1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 5px;
+}
+
+/* .container2 > img{
+  width: 100px;
+  height: 100px;
+} */
+
+/* Misión y Visión */
+.mision, .vision {
   
-
-  
-  .container1 {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-  }
-
-  .container2 {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  /* Encabezado */
-
-.mision{
-  height: 400px;
-  border: 5px solid #920a23;
+  height: auto;
   text-align: justify;
   width: 40%;
   border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
-.vision{
+.imagenv{
+  width: 600px;
   height: 400px;
-  border: 5px solid #003366;
-  text-align: justify;
-  width: 40%;
+}
+
+.imagenm{
+  width: 600px;
+  height: 400px;
+}
+
+.vision:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mision:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mision-vision{
+ 
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mision > p{
+  font-size: 18px;
+}
+
+.vision > p{
+  font-size: 18px;
+}
+
+
+.titulo{
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(19, 41, 83);
+}
+
+
+/* Encabezado */
+header {
+  padding: 20px 0;
+  height: 600px;
+  width: 100%;
+  background-image: url('imagen2.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Navegación */
+nav {
+  background-color: azure;
+  margin: 0;
+  padding: 20px 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-items: center;
+  border-radius: 5px solid #003366;
+}
+
+/* Productos */
+.productos-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.producto {
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-.logo{
-    display: flex;
-    justify-content: flex-start;
+.producto > img{
+  width: 225px;
+  height: 225px;
 }
 
-  header {
-    padding: 20px 0;
-    height: 600px;
-    width: 100%;
-    background-image: url('imagen2.png'); /* Ruta de tu imagen con transparencia */
-    background-size: cover; /* Ajusta la imagen para cubrir el encabezado */
-    background-position: center; /* Centra la imagen */
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    
-  }
-  
+/* Testimonios */
+.testimonios-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
 
-  
-  .logo img {
-    height: 50px;
-    
+.video {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #f1ab70;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Botón WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-btn img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Botón "Volver arriba" */
+.scroll-top-nav {
+  position: fixed;
+  background-color: azure;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.scroll-top-btn.show {
+  display: block;
+}
+
+/* Media Queries para dispositivos pequeños */
+
+@media screen and (max-width: 768px) {
+  /* Ajustar contenedor para pantallas más pequeñas */
+  .container1, .container2 {
+    width: 95%;
+    max-width: none;
   }
 
-  nav{
-    
-    background-color: azure;
-    margin: 0;
-    padding: 20px 0;
-    width: 100%;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-    
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    justify-items: center;
-    border-radius: 5px solid #003366;
-  }
-  
-
-  /* Botón de WhatsApp */
-  .whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .whatsapp-btn img {
-    width: 96px;
-    height: 96px;
-  }
-  
-
-  /* Secciones */
-  section {
-    padding: 50px 0;
-  }
-  
-  h2 {
-    color: #920a23;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  /* Productos */
-  .productos-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .producto {
-    flex: 0 0 auto;
-    width: 250px;
-    text-align: center;
-  }
-  
-  .producto img {
+  /* Estilo para secciones de misión y visión */
+  .mision, .vision {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Testimonios */
-  .testimonios-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .video {
-    flex: 0 0 auto;
-    width: 300px;
-  }
-  
-  .video iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #f1ab70;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .social a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  /* Botón "Volver arriba" */
-  .scroll-top-nav {
-    position: fixed;
+    margin-bottom: 20px;
     
-    background-color: azure;
-    color: black;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
+    
+  }
+
+  /* Mover logo al centro en pantallas pequeñas */
+  .logo {
+    justify-content: center;
+  }
+
+  /* Estilo de la navegación */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Productos */
+  .producto {
+    width: 200px;
+  }
+
+  /* Testimonios */
+  .video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Asegurarse de que los productos se ajusten en pantallas muy pequeñas */
+  .producto {
+    width: 90%;
+  }
+
+  /* Para el header en dispositivos muy pequeños */
+  header {
+    height: 150px; /* Reducir el tamaño del header */
+  }
+
+  .mision > p{
+    font-size: 15px;
   }
   
-  .scroll-top-btn.show {
-    display: block;
+  .vision > p{
+    font-size: 15px;
   }
+
+  .imagenv , .imagenm{
+    height: 300px;
+    width: 300px;
+}
+
+.titulo{
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(19, 41, 83);
+}
+
+  .logo img {
+    height: 40px; /* Ajustar el tamaño del logo */
+  }
+
+  /* Ajuste de imagen de WhatsApp */
+  .whatsapp-btn img {
+    width: 70px;
+    height: 70px;
+  }
+}
