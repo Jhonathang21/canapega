@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canapega - Productos de Piscina y Materiales de Construcción</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylescarrucel.css">
 
 </head>
 <body>
@@ -14,11 +15,11 @@
      
   
   <nav>
-    <div class="logo">
-        <img src="1-removebg-preview.png" alt="Logo Canapega">
+      <div class="logo">
+        <img src="images/1-removebg-preview.png" alt="Logo Canapega">
       </div>
     <ul>
-      <li><a href="#mision">Misión y Visión</a></li>
+      <li><a href="#mision">Nosotros</a></li>
       <li><a href="#productos">Productos</a></li>
       <li><a href="#testimonios">Testimonios</a></li>
       <li><a href=""></a>  </li>
@@ -31,63 +32,122 @@
 
   <!-- Botón de WhatsApp -->
   <a href="https://wa.me/3146425071?text=Hola,%20estoy%20interesado%20en%20sus%20productos" class="whatsapp-btn" target="_blank">
-    <img src="whatsapp1.svg" alt="WhatsApp">
+    <img src="images/whatsapp1.svg" alt="WhatsApp">
   </a>
-
-  <!-- Productos -->
   <section id="productos" class="productos">
-    <div class="container1">
-      <h2>Nuestros Productos</h2>
-      <div class="productos-scroll">
-        <div class="producto">
-          <img src="pega.png" alt="Producto 1">
-          <h3>Pegacor</h3>
-          <p>Descripción breve del producto.</p>
+  <div class="carousel-container">
+    <h2 class="carousel-title">Productos Destacados</h2>
+    
+    <div class="carousel-track">
+        <!-- Slide 1 -->
+        <div class="carousel-slide">
+          <div class="product-card">
+            <img src="images/pega.png" alt="Pegamento para Cerámica Estándar" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Pegamento Cerámico Estándar</h3>
+                <p class="product-description">Adhesivo de alta calidad para instalación de cerámica en interiores. Secado rápido y alta adherencia.</p>
+                <div class="product-price">$12.99</div>
+            </div>
         </div>
-        <div class="producto">
-          <img src="sica.png" alt="Producto 2">
-          <h3>Sicafex</h3>
-          <p>Descripción breve del producto.</p>
+        
+        <div class="product-card">
+            <img src="images/ceramica.png" alt="Pegamento Cerámico Flexible" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Pegamento Cerámico Flexible</h3>
+                <p class="product-description">Adhesivo flexible para cerámica con propiedades anti-deslizantes. Ideal para superficies verticales.</p>
+                <div class="product-price">$18.50</div>
+            </div>
         </div>
-        <div class="producto">
-            <img src="pegap.png" alt="Producto 2">
-            <h3>Paga en pasta</h3>
-            <p>Descripción breve del producto.</p>
-          </div>
-          <div class="producto">
-            <img src="ceramica.png" alt="Producto 2">
-            <h3>Ceramica piso</h3>
-            <p>Descripción breve del producto.</p>
-          </div>
-          <div class="producto">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Descripción breve del producto.</p>
-          </div>
-          <div class="producto">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Descripción breve del producto.</p>
-          </div>
-          <div class="producto">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Descripción breve del producto.</p>
-          </div>
-          <div class="producto">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Descripción breve del producto.</p>
-          </div>
-        <!-- Agrega más productos aquí -->
-      </div>
+        
+        <div class="product-card">
+            <img src="images/pegap.png" alt="Pegamento Cerámico Premium" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Pegamento Cerámico Premium</h3>
+                <p class="product-description">Adhesivo de máxima resistencia para cerámica de gran formato. Resistente a la humedad y cambios térmicos.</p>
+                <div class="product-price">$24.99</div>
+            </div>
+        </div>
     </div>
+    
+    <!-- Slide 2 - Pegamentos para Piscina -->
+    <div class="carousel-slide">
+        <div class="product-card">
+            <img src="images/pega.png" alt="Adhesivo para Piscinas" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Adhesivo para Piscinas</h3>
+                <p class="product-description">Pegamento especial para revestimientos de piscinas. Resistente al agua y productos químicos.</p>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/sica.png" alt="Sellador de Juntas para Piscina" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Sellador de Juntas para Piscina</h3>
+                <p class="product-description">Sellador impermeable para juntas de piscinas. Previene filtraciones y crecimiento de algas.</p>
+                <div class="product-price">$22.50</div>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1571217668979-f46db8864fe7" alt="Adhesivo Epoxi para Piscinas" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Adhesivo Epoxi para Piscinas</h3>
+                <p class="product-description">Adhesivo epoxi bicomponente para reparaciones estructurales en piscinas. Máxima durabilidad.</p>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 3 - Productos Complementarios -->
+    <div class="carousel-slide">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" alt="Mortero Impermeable" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Mortero Impermeable</h3>
+                <p class="product-description">Mortero especial con propiedades impermeabilizantes para zonas húmedas y piscinas.</p>
+                <div class="product-price">$19.99</div>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd" alt="Limpiador de Residuos Cerámicos" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Limpiador de Residuos</h3>
+                <p class="product-description">Limpiador ácido para eliminar residuos de cemento y adhesivos en instalaciones cerámicas.</p>
+                <div class="product-price">$15.75</div>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c" alt="Kit de Herramientas para Cerámica" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Kit de Herramientas</h3>
+                <p class="product-description">Set completo de herramientas para la instalación profesional de cerámica y revestimientos.</p>
+                <div class="product-price">$45.99</div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <button class="carousel-button carousel-button-prev">&lt;</button>
+    <button class="carousel-button carousel-button-next">&gt;</button>
+    
+    <div class="carousel-indicators">
+        <div class="carousel-indicator active"></div>
+        <div class="carousel-indicator"></div>
+        <div class="carousel-indicator"></div>
+    </div>
+</div>
+
   </section>
 
     <!-- Misión y Visión -->
     <section id="mision" class="mision-vision">
+      <div class="carousel-container">
+        <h2 class="carousel-title">Nosotros</h2>
       <div class="container2">
-          <img src="mision.jpg" alt="" class="imagenm">
+          <img src="images/mision.jpg" alt="" class="imagenm">
           <div class="mision">
             <h2 class="titulo">Misión</h2>
             <p>Proveer soluciones innovadoras y sostenibles en materiales de construcción, ofreciendo productos de alta calidad que optimicen los procesos constructivos. Nos comprometemos a ser aliados estratégicos de nuestros clientes, brindando asesoría técnica especializada y contribuyendo al desarrollo de infraestructuras más eficientes y eco-amigables.</p>
@@ -99,7 +159,7 @@
           <h2 class="titulo">Visión</h2>
           <p>Ser líderes en el mercado latinoamericano para 2030, reconocidos por nuestra capacidad de integrar tecnología de vanguardia y prácticas sostenibles en la fabricación y distribución de materiales. Aspiramos a transformar la industria de la construcción mediante soluciones que equilibren rentabilidad, durabilidad y responsabilidad ambiental.</p>
         </div>
-        <img src="vision.jpg" alt="" class="imagenv">
+        <img src="images/vision.jpg" alt="" class="imagenv">
       </div>
     </section>
 
@@ -135,7 +195,10 @@
         <!-- Agrega más videos aquí -->
       </div>
     </div>
+  </div>
   </section>
+
+  <button id="scroll-to-top" class="scroll-to-top-btn" title="Volver arriba">↑</button>
 
   <!-- Footer -->
   <footer>
@@ -153,6 +216,7 @@
   <!-- <button id="scrollTopBtn" class="scroll-top-btn">↑</button> -->
 
   <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/carrusel.js"></script>
 </body>
 </html>
