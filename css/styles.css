@@ -277,7 +277,7 @@ footer {
   }
 
   .imagenv , .imagenm{
-    height: 300px;
+    height: 200px;
     width: 300px;
 }
 
@@ -296,4 +296,5 @@ footer {
     width: 70px;
     height: 70px;
   }
+
 }
