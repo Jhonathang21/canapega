@@ -6,24 +6,28 @@
   <title>Canapega - Productos de Piscina y Materiales de Construcción</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/stylescarrucel.css">
+  <link rel="stylesheet" href="css/sytlesmenu.css">
 
 </head>
 <body>
   <!-- Encabezado -->
 
-      
-     
-  
-  <nav>
+  <nav id="navbar">
+    <div class="container1 nav-container">
       <div class="logo">
         <img src="images/1-removebg-preview.png" alt="Logo Canapega">
       </div>
-    <ul>
-      <li><a href="#mision">Nosotros</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#testimonios">Testimonios</a></li>
-      <li><a href=""></a>  </li>
-    </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar">Nosotros</span>
+        <span class="bar">Productos</span>
+        <span class="bar">Testimonios</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#mision">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -218,5 +222,6 @@
   <!-- JavaScript -->
   <script src="js/script.js"></script>
   <script src="js/carrusel.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
