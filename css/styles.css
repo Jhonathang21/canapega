@@ -65,6 +65,10 @@ body {
   
 }
 
+div > .imagenv{
+  margin: 0;
+  padding: 0%;
+}
 
 .imagenv{
   width: 100%;
@@ -76,7 +80,7 @@ body {
 
   height: 350px;
   object-fit: cover;
-    width: 100%;
+  width: 100%;
 }
 
 .container:hover{
@@ -94,13 +98,6 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.mision-vision{
- 
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
 .mision > p{
   font-size: 18px;
