@@ -33,6 +33,7 @@ body {
 }
 
 
+
 /* Misión y Visión */
 .mision, .vision {
   
@@ -96,6 +97,7 @@ body {
 /* Encabezado */
 header {
   padding: 20px 0;
+  margin: 50px 0;
   height: 600px;
   width: 100%;
   background-image: url('../images/imagen2.png');
@@ -107,7 +109,8 @@ header {
 
 /* Logo */
 .logo img {
-  height: 50px;
+  width: 300px;
+  height: 300px;
 }
 
 /* Navegación */
@@ -166,13 +169,7 @@ nav ul li a {
   border-radius: 10px;
 }
 
-/* Footer */
-footer {
-  background-color: #f1ab70;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
+
 
 .social a {
   color: #fff;
@@ -265,7 +262,7 @@ footer {
 
   /* Para el header en dispositivos muy pequeños */
   header {
-    height: 150px; /* Reducir el tamaño del header */
+    height: 300px; /* Reducir el tamaño del header */
   }
 
   .mision > p{
@@ -276,10 +273,11 @@ footer {
     font-size: 15px;
   }
 
-  .imagenv , .imagenm{
-    height: 200px;
+
+  .container2 > img{
+    height: 220px;
     width: 300px;
-}
+  }
 
 .titulo{
   font-size: 30px;

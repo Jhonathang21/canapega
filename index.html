@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/stylescarrucel.css">
   <link rel="stylesheet" href="css/sytlesmenu.css">
+  <link rel="stylesheet" href="css/stylescontacto.css">
+  <link rel="stylesheet" href="css/stylesfooter.css">
 
 </head>
 <body>
@@ -15,17 +17,19 @@
   <nav id="navbar">
     <div class="container1 nav-container">
       <div class="logo">
-        <img src="images/1-removebg-preview.png" alt="Logo Canapega">
+        <img src="images/nombre-removebg-preview.png" alt="Logo Canapega">
       </div>
       <div class="menu-toggle" id="mobile-menu">
-        <span class="bar">Nosotros</span>
-        <span class="bar">Productos</span>
-        <span class="bar">Testimonios</span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <ul class="nav-menu">
-        <li><a href="#mision">Nosotros</a></li>
         <li><a href="#productos">Productos</a></li>
+        <li><a href="#mision">Nosotros</a></li>
         <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
       </ul>
     </div>
   </nav>
@@ -35,7 +39,7 @@
   </header>
 
   <!-- Botón de WhatsApp -->
-  <a href="https://wa.me/3146425071?text=Hola,%20estoy%20interesado%20en%20sus%20productos" class="whatsapp-btn" target="_blank">
+  <a href="https://wa.me/3160485399?text=Hola,%20estoy%20interesado%20en%20sus%20productos" class="whatsapp-btn" target="_blank">
     <img src="images/whatsapp1.svg" alt="WhatsApp">
   </a>
   <section id="productos" class="productos">
@@ -164,8 +168,43 @@
           <p>Ser líderes en el mercado latinoamericano para 2030, reconocidos por nuestra capacidad de integrar tecnología de vanguardia y prácticas sostenibles en la fabricación y distribución de materiales. Aspiramos a transformar la industria de la construcción mediante soluciones que equilibren rentabilidad, durabilidad y responsabilidad ambiental.</p>
         </div>
         <img src="images/vision.jpg" alt="" class="imagenv">
+      </div>  
+    </section>
+
+    <section id="contacto">
+      <div class="carousel-container">
+        <h2 class="carousel-title">Contáctanos</h2>
+        <form action="https://formspree.io/f/canahpega@gmail.com" method="POST">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="telefono" placeholder="Teléfono">
+          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
     </section>
+  
+    <!-- Nueva sección de ubicación -->
+    <section id="ubicacion">
+      <div class="carousel-container">
+        <h2 class="carousel-title">Cómo ubicarnos</h2>
+        <div class="container2">
+          <div id="mapa">
+            <!-- Reemplaza el src con tu enlace de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7963.752419029125!2d-76.39783691486605!3d3.6157726054974013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a01bd62ef1bd5%3A0x535db8634970cb!2sRozo%2C%20Palmira%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1740859663418!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div id="info-fabrica">
+            <h3>Información de la Fábrica</h3>
+            <p>Dirección: AV 9  8  151 CRR ROZO - PALMIRA</p>
+            <p>Teléfono: 3165279895</p>
+            <p><a href="https://wa.me/3160485399?text=Hola,%20estoy%20interesado%20en%20sus%20productos">WhatsApp: 3160485399</a></p>
+            <p>Email: canahpega@gmail.com</p>
+            <p>Horario: Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
 
   <!-- Testimonios -->
   <section id="testimonios" class="testimonios">
@@ -205,19 +244,64 @@
   <button id="scroll-to-top" class="scroll-to-top-btn" title="Volver arriba">↑</button>
 
   <!-- Footer -->
-  <footer>
-    <div class="container1">
-      <p>Contacto: info@canapega.com | Tel: 123-456-7890</p>
-      <div class="social">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
+  <footer class="footer">
+    <div class="footer-container">
+
+     <!-- Información Legal -->
+      <div class="footer-column">
+        <h3>Información legal</h3>
+        <ul>
+          <li><a href="https://www.datacreditoempresas.com.co/directorio/canahpega-sas.html" target="_blank">Camara y comercio</a></li>
+        </ul>
+      </div>
+
+  
+      <!-- Comunícate con nosotros -->
+      <div class="footer-column">
+        <h3>Comunícate con nosotros</h3>
+        <p class="contact-info">Estos son nuestros canales de comunicación:</p>
+        <ul>
+          <li>
+            <i class="location-icon">📍</i>
+            <a href="#">AV 9  8  151 CRR ROZO - PALMIRA</a>
+          </li>
+          <li>
+            <i class="whatsapp-icon">📱</i>
+            <a href="#">WhatsApp: (+57) 316 0485399</a>
+          </li>
+          <li>
+            <i class="phone-icon">📞</i>
+            Ventas: (+57) 316 5279895
+          </li>
+          <li>
+            <i class="email-icon">✉️</i>
+            canahpega@gmail.com
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Horarios de atención -->
+      <div class="footer-column">
+        <h3>Horarios de atención</h3>
+        <ul>
+          <li>
+            <i class="clock-icon">🕒</i>
+            Lunes - Viernes 8:00 - 5:00
+          </li>
+          <li>Sábado - 8:00 - 1:00</li>
+          <li>Domingos y festivos - Cerrado</li>
+        </ul>
+        <div class="security-info">
+          <p><i class="payment-icon">💳</i> Pagos confiables</p>
+          <div class="payment-methods">
+            <img src="images/metodos-pago.png" alt="Métodos de pago" />
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Botón "Volver arriba" -->
-  <!-- <button id="scrollTopBtn" class="scroll-top-btn">↑</button> -->
+
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
