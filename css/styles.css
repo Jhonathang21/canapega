@@ -25,6 +25,7 @@ body {
   
 }
 
+
 .container2 > img{
   width: 530px;
   height: 350px;
@@ -54,7 +55,6 @@ body {
 
 /* Misión y Visión */
 .mision, .vision {
-  
   height: auto;
   text-align: justify;
   width: 40%;
@@ -65,22 +65,17 @@ body {
   
 }
 
-div > .imagenv{
-  margin: 0;
-  padding: 0%;
-}
 
-.imagenv{
-  width: 100%;
+div > .imagenv{
+  width: 500px;
   height: 350px;
   object-fit: cover;
 }
 
 .imagenm{
-
   height: 350px;
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
 }
 
 .container:hover{
