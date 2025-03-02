@@ -201,9 +201,33 @@ nav ul li a {
   z-index: 1000;
 }
 
+.instagram-btn {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.facebook-btn{
+  position: fixed;
+  bottom: 140px;
+  left: 20px;
+  z-index: 1000;
+}
+
 .whatsapp-btn img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+}
+
+.instagram-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+.facebook-btn img{
+    width: 60px;
+    height: 60px;
 }
 
 /* Botón "Volver arriba" */
@@ -312,8 +336,30 @@ nav ul li a {
 
   /* Ajuste de imagen de WhatsApp */
   .whatsapp-btn img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+  }
+  .instagram-btn img {
+    width: 50px;
+    height: 50px;
+  }
+  .facebook-btn img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .instagram-btn {
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .facebook-btn{
+    position: fixed;
+    bottom: 120px;
+    left: 20px;
+    z-index: 1000;
   }
 
 }

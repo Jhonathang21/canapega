@@ -259,10 +259,19 @@ body {
 }
 
 .product-image {
-    height: 200px;
+    height: auto;
     width: 100%;
     object-fit: cover;
     border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.product-card > img{
+    width: 225px;
+    height: 225px;
+    align-items: center;
+    margin: 30px;
+
 }
 
 .product-info {
@@ -341,6 +350,31 @@ body {
 .carousel-indicator.active {
     background: #e74c3c;
     transform: scale(1.2);
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, opacity 0.3s;
+    
+    z-index: 1000;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #c0392b;
+    
 }
 
 @media (max-width: 768px) {
