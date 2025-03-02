@@ -40,6 +40,12 @@
     width: 46%;
     margin-right: 10px;
   }
+  .container21{
+    width: auto;
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+  }
   #mapa iframe {
     width: 100%;
     height: 350px;
@@ -52,6 +58,8 @@
     border-radius: 8px;
     background-color: #12166d;
     color: white;
+    height: auto;
+    
   }
   footer {
     background-color: #12166d;
