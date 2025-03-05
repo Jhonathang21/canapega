@@ -60,7 +60,7 @@
     margin-top: 15px;
   }
   
-  .payment-methods img {
+  .payment-methods > img {
     max-width: 100%;
     height: auto;
   }
