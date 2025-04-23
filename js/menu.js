@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         if (scrollTop > lastScrollTop) {
           // Scrolling down
-          navbar.style.top = "-100px";
+          navbar.style.top = "-110px";
         } else {
           // Scrolling up
           navbar.style.top = "0";

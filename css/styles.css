@@ -1,10 +1,11 @@
 /* Estilos generales */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ECF0F1;
+  background-color: #f1f1f1;
 }
 
 /* Contenedor */
@@ -14,29 +15,63 @@ body {
   margin: 10px auto;
 }
 
+
+/* Estilos base para las tarjetas */
 .container2 {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
-  margin: 5px;
-  
+  gap: 20px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
 }
 
+.card-mision, .card-vision {
+  width: 40%;
+  min-width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
 
-.container2 > img{
-  width: 530px;
-  height: 350px;
-  align-items: center;
-  padding: 20px;
-  object-fit: cover;
+/* Estado inicial - oculto */
+.card-mision, .card-vision {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Clases de animación */
+.card-mision.animated {
+  animation: fadeInUp 0.8s ease forwards 0.3s;
+}
+
+.card-vision.animated {
+  animation: fadeInUp 0.8s ease forwards 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imagenm {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-mision:hover .imagenm, 
+.card-vision:hover .imagenm {
+  transform: scale(1.03);
 }
 
 .container{
   padding-left: 20px;
-  margin-left: 20px;
+  margin-left: 60px;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
@@ -46,60 +81,24 @@ body {
 .container{
   height: auto;
   text-align: justify;
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-items: center;
+  margin-left: 15%;
 }
 
-/* Misión y Visión */
-.mision, .vision {
-  height: auto;
-  text-align: justify;
-  width: 40%;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-}
-
-
-div > .imagenv{
-  width: 500px;
-  height: 350px;
-  object-fit: cover;
-}
-
-.imagenm{
-  height: 350px;
-  width: 100%;
-  object-fit: cover;
-}
 
 .container:hover{
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.vision:hover{
+.imagenm:hover{
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.mision:hover{
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.mision > p{
-  font-size: 18px;
-}
-
-.vision > p{
-  font-size: 18px;
 }
 
 
@@ -109,14 +108,6 @@ div > .imagenv{
   color: rgb(19, 41, 83);
 }
 
-
-
-
-/* Logo */
-.logo img {
-  width: 300px;
-  height: 300px;
-}
 
 
 /* Testimonios */
@@ -263,19 +254,13 @@ div > .imagenv{
     height: 300px; /* Reducir el tamaño del header */
   }
 
-  .mision > p{
-    font-size: 15px;
-  }
-  
-  .vision > p{
-    font-size: 15px;
-  }
+
+.imagenm{
+  height: 350px;
+    width: 350px;
+}
 
 
-  .container2 > img{
-    height: 220px;
-    width: 300px;
-  }
 
 .titulo{
   font-size: 30px;
